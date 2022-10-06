@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/reset';
+
+@import './components/container';
+@import './components/mobile-menu';
+@import './components/modal-buy-now.scss';
+@import './components/modal-ingredients';
+@import './components/modal-read-more';
+@import './components/modal-our-location';
+@import './components/modal-franchise';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products.scss';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
+

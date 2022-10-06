@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://KharlanEd.github.io/command-project.git",
+  "homepage": "https://KharlanEd.github.io/command-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /command-project.git/"
+    "build": "parcel build src/*.html --public-url /command-project/"
   },
   "repository": {
     "type": "git",
