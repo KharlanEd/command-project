@@ -99,6 +99,25 @@ color: #ABABAB;
 
 }
 
+@media screen and (min-width: 768px) {
+.contacts {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 32px;
+}
+
+.contacts:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.contacts__card {
+    
+    flex-basis: calc((100% - 64px) / 3);
+}
+}
+    
+    
+
 
 
 
