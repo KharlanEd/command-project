@@ -1,8 +1,15 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @media screen and (max-width: 480px), screen and (min-width: 280px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
+  .container-contacts {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .bgcolor {
+    background-color: #84A178;
+  }
+  .contacts__address {
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .list {
     list-style: none;
@@ -118,19 +125,19 @@ p {
   }
 }
 @media screen and (min-width: 480px) {
-  .container {
+  .container-contacts {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .container-contacts {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .container-contacts {
     width: 1200px;
   }
 }/*# sourceMappingURL=index.css.map */
