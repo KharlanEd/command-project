@@ -87,6 +87,9 @@ p {
     color: #D6936D;
     text-decoration: none;
   }
+  .contacts__map:hover, .contacts__map:focus {
+    text-decoration: underline;
+  }
   .contacts__link {
     font-style: normal;
     font-weight: 500;
