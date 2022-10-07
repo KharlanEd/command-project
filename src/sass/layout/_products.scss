@@ -1,0 +1,82 @@
+.products {
+    text-align: center;
+}
+
+.products__list {
+    display: inline-block;
+    margin-top: 148px;
+}
+.products__items {
+        border-radius: 24px;
+        width: 100%;
+        max-width: 280px;
+
+        padding-left: 40px;
+        padding-right: 40px;
+}
+
+.products__ice-cream {
+        background: #AEC6A5;
+}
+
+.products__ice-coffee {
+        background: #EFD478;
+
+}
+
+.products__milkshakes {
+        background: #D6936D;
+}
+
+.products-paragraph {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #131313;
+}
+
+.products-title {
+        font-family: 'Seymour One';
+        font-size: 30px;
+        line-height: 1.26;
+    
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+    
+        color: #131313;
+
+}
+
+.products__card-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        padding-top: 123px;
+        margin-bottom: 40px;
+    
+        color: #131313;
+}
+
+.products__card-about {
+        font-size: 14px;
+        line-height: 1.78;
+    
+        letter-spacing: 0.04em;
+
+        margin-bottom: 90px;
+
+        color: #131313;
+}
+.products__btn {
+    margin-bottom: 20px;
+
+}
