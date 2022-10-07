@@ -11,6 +11,7 @@
 
 .hero {
   background-color: #84a178;
+  background-image: url(../../images/hero/dots-mobile.png);
 }
 
 .hero-title {

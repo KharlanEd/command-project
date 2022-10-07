@@ -1,6 +1,8 @@
 .section-hero {
   padding-top: 58px;
   padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
 }
 
 .hero-container {
@@ -10,8 +12,15 @@
 
 .hero {
   background-color: #84a178;
+  background-image: url(../images/hero/dots-mobile.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: contain;
 }
 
+// .hero-image__ice-cream {
+// }
 .hero-title {
   font-family: Seymour One, sans-serif;
   color: rgba(252, 252, 252, 1);
@@ -47,10 +56,8 @@
   font-family: Montserrat, sans-serif;
   color: #000000;
   font-weight: 600;
-  font-size: 8px;
+  font-size: 14px;
   line-height: 1.25;
-  width: 62px;
-  height: 24px;
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
@@ -72,10 +79,8 @@
   font-family: Montserrat, sans-serif;
   color: rgba(248, 210, 78, 1);
   font-weight: 600;
-  font-size: 8px;
+  font-size: 14px;
   line-height: 1.21;
-  width: 83px;
-  height: 24px;
   text-decoration-line: underline;
   background-color: transparent;
   border: none;
