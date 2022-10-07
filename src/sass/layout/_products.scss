@@ -2,54 +2,84 @@
     text-align: center;
 }
 
-.products__list {
-    display: inline-block;
-    margin-top: 148px;
-}
-.products__items {
-        border-radius: 24px;
-        width: 100%;
-        max-width: 280px;
-
-        padding-left: 40px;
-        padding-right: 40px;
-}
-
-.products__ice-cream {
-        background: #AEC6A5;
-}
-
-.products__ice-coffee {
-        background: #EFD478;
-
-}
-
-.products__milkshakes {
-        background: #D6936D;
-}
-
 .products-paragraph {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.2;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.2;
 
-    text-align: center;
-    text-transform: uppercase;
+        text-align: center;
+        text-transform: uppercase;
 
-    color: #131313;
+        color: #131313;
 }
 
 .products-title {
         font-family: 'Seymour One';
         font-size: 30px;
         line-height: 1.26;
-    
+
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
-    
+
         color: #131313;
 
+}
+
+.products__list {
+        display: inline-block;
+        margin-top: 148px;
+
+        margin-bottom: 0;
+        padding: 0;
+}
+
+.products__items {
+        border-radius: 24px;
+        width: 100%;
+        max-width: 280px;
+
+        margin-bottom: 163px;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &::before {
+                        content: "";
+                        width: 200px;
+                        height: 200px;
+                        position: absolute;
+                        top: -108;
+                        left: 40;
+                        z-index: 100;
+        }
+}
+
+.products__ice-cream {
+        position: relative;
+        background: #AEC6A5;
+        &::before {
+                        background-image: url(../images/products/products-ice-cream.png);
+                }
+}
+
+.products__ice-coffee {
+        position: relative;
+        background: #EFD478;
+
+        &::before {
+                        background-image: url(../images/products/products-ice-coffee.png);
+                }
+
+}
+
+.products__milkshakes {
+        position: relative;
+        background: #D6936D;
+
+        &::before {
+                        background-image: url(../images/products/products-milkshakes.png);
+                }
 }
 
 .products__card-title {
@@ -62,8 +92,39 @@
 
         padding-top: 123px;
         margin-bottom: 40px;
+
+        &::before {
+                content: "";
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: -96px;
+                left: 40px;
+                border-radius: 100px;
+
+        }
     
         color: #131313;
+}
+
+.products__card-ice-cream {
+        &::before {
+                box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+        }
+}
+
+.products__card-ice-coffee {
+        &::before {
+                box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+        }
+
+}
+
+.products__card-milkshakes {
+        &::before {
+                box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+        }
+
 }
 
 .products__card-about {
