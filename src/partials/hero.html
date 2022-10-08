@@ -11,14 +11,36 @@
         <a href="#" class="hero-button__how-made"> How it’s made? </a>
       </li>
     </ul>
-    <div class="ice-cream-container" width="170" height="219">
+    <div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/ice-cream-desctop.png    1x,
+          ./images/hero/ice-cream-desctop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/ice-cream-tablet.png    1x,
+          ./images/hero/ice-cream-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/ice-cream-mobile.png 1x,
+          ./images/hero/ice-cream-mobile.png 2x
+        "
+        media="(max-width: 767px)"
+      />
       <img
         src="./images/hero/ice-cream-mobile.png"
-        alt=""
+        alt="ice-cream"
         class="hero-image__ice-cream"
-        width="100%"
-        height="100%"
+        width="170"
+        height="219"
       />
-    </div>
+    </picture>
   </div>
 </section>
