@@ -85,7 +85,7 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
     padding-left: 20px;
@@ -108,96 +108,6 @@ img {
     padding-right: 16px;
   }
 }
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
-.header {
-  position: absolute;
-  width: 100%;
-}
-
-.nav-conteiner {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  align-items: center;
-}
-
-.nav__menu {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .nav__menu {
-    display: flex;
-    padding-left: 0px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.menu__list {
-  display: flex;
-  gap: 27px;
-}
-
-.menu__link {
-  color: #F8D24E;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.menu__link:hover,
-.menu__link:focus,
-.curent {
-  color: #131313;
-}
-
-@media screen and (min-width: 480px) {
-  .header__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 34px;
-    border-radius: 10px;
-    background-color: #F8D24E;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .header__button {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .menu-open-btn {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    fill: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .menu-open-btn {
-    display: none;
-  }
-}
-
-.burger {
-  fill: #ffffff;
-}
-
 @media screen and (max-width: 768px) {
   .mob-buttons {
     display: flex;
@@ -303,6 +213,108 @@ img {
     background-color: #F8D24E;
   }
 }
+.mob__cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 63px 84px;
+}
+@media only screen and (min-width: 480px) {
+  .mob__cta-wrapper {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.nav-conteiner {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.nav__menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    display: flex;
+    padding-left: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menu__list {
+  display: flex;
+  gap: 27px;
+}
+
+.menu__link {
+  color: #F8D24E;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.curent {
+  color: #131313;
+}
+
+@media screen and (min-width: 480px) {
+  .header__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 34px;
+    border-radius: 10px;
+    background-color: #F8D24E;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header__button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu-open-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.burger {
+  fill: #ffffff;
+}
+
 .products {
   text-align: center;
 }
@@ -418,6 +430,49 @@ img {
   margin-bottom: 20px;
 }
 
+.gallery-reviews-contaner {
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(to bottom, var(--primary-bg-color) 0px 24px, transparent 24px 100%), url("../images/back-gallery-mobile.jpg");
+  height: 1070px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .gallery-reviews-contaner {
+    background-image: linear-gradient(to bottom, var(--primary-bg-color) 0px 24px, transparent 24px 100%), url("../images/back-gallery-mobile@2x.jpg");
+    height: 1070px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-reviews-contaner {
+    background-image: linear-gradient(to bottom, var(--primary-bg-color) 0px 164px, transparent 164px 100%), url("../images/back-gallery-tablet.jpg");
+    height: 1124px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .gallery-reviews-contaner {
+    background-image: linear-gradient(to bottom, var(--primary-bg-color) 0px 164px, transparent 164px 100%), url("../images/back-gallery-tablet@2x.jpg");
+    height: 1124px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-reviews-contaner {
+    background-image: linear-gradient(to bottom, var(--primary-bg-color) 0px 94px, transparent 94px 100%), url("../images/back-gallery-desktop.jpg");
+    height: 1118px;
+    max-width: 1600px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .gallery-reviews-contaner {
+    max-width: 1600px;
+    background-image: linear-gradient(to bottom, var(--primary-bg-color) 0px 94px, transparent 94px 100%), url("../images/back-gallery-desktop@2x.jpg");
+    height: 1118px;
+    max-width: 1600px;
+  }
+}
+
 .testimonials {
   padding: 75px 0;
   background-image: url(../images/testimonials/background.jpg);
@@ -485,6 +540,108 @@ img {
     width: 968px;
     font-weight: 500;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px), screen and (min-width: 280px) {
+  .container-contacts {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .contacts__address {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .contacts {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+  .contacts__card {
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    background: #FCFCFC;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    border: #E1E1E1;
+  }
+  .contacts__card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .contacts__place {
+    padding-bottom: 8px;
+    margin-top: 20px;
+  }
+  .contacts__tipe {
+    display: table-cell;
+    background: #F8D24E;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contacts__info {
+    display: block;
+    padding-top: 24px;
+  }
+  .contacts__place-time-open {
+    margin-bottom: 8px;
+  }
+  .contacts__place-time,
+.contacts__place-time-open {
+    color: #ABABAB;
+  }
+  .contacts__info:not(:last-child) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .contacts__map {
+    font-style: normal;
+    color: #D6936D;
+    text-decoration: none;
+  }
+  .contacts__map:hover, .contacts__map:focus {
+    text-decoration: underline;
+  }
+  .contacts__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #131313;
+  }
+}
+@media screen and (min-width: 768px), screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 16px;
+  }
+  .contacts {
+    display: flex;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .contacts__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .contacts__card {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+@media screen and (min-width: 480px) {
+  .container-contacts {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-contacts {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-contacts {
+    width: 1200px;
   }
 }
 .page-footer {
