@@ -1,3 +1,8 @@
+.products__section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+}
+
 .products {
     text-align: center;
 }
@@ -10,19 +15,19 @@
         text-align: center;
         text-transform: uppercase;
 
-        color: #131313;
+        color: var(--secondary-text-color);
 }
 
 .products-title {
         font-family: 'Seymour One';
         font-size: 30px;
         line-height: 1.26;
-
-        letter-spacing: 0.04em;
         text-transform: uppercase;
 
+        margin-top: 12px;
 
-        color: #131313;
+
+        color: var(--secondary-text-color);
 
 }
 
@@ -33,6 +38,7 @@
 }
 
 .products__items {
+        display: inline-block;
         border-radius: 24px;
         width: 100%;
         min-width: 280px;
@@ -43,55 +49,92 @@
         padding-left: 40px;
         padding-right: 40px;
 
+        &:last-child {
+                margin-bottom: 0;
+        }
+
         &::before {
                         content: "";
                         width: 200px;
                         height: 200px;
                         position: absolute;
+                        border-radius: 100px;
                         top: -108;
                                 left: 50%;
                                 margin-right: -50%;
                                 transform: translate(-50%, 0);
-                        z-index: 100;
+                        z-index: 20;
+                        background-size: cover;
         }
 }
 
 .products__ice-cream {
         position: relative;
-        background: #AEC6A5;
+        background: var(--cream-bg-color);
         &::before {
-                        background-image: url(../images/products/products-ice-cream.png);
+                        background-image: url(../images/products/products-ice-cream.jpg);
                 }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 1199px),
+(min-resolution: 192dpi) and (max-width: 1199px),
+(min-resolution: 2dppx) and (max-width: 1199px) {
+        .products__ice-cream {
+                &::before {
+                        background-image: url(../images/products/products-ice-cream@2.jpg);
+                        
+                }
+        }
 }
 
 .products__ice-coffee {
         position: relative;
-        background: #EFD478;
+        background: var(--coffee-bg-color);
 
         &::before {
-                        background-image: url(../images/products/products-ice-coffee.png);
+                        background-image: url(../images/products/products-ice-coffee.jpg);
                 }
 
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 1199px),
+(min-resolution: 192dpi) and (max-width: 1199px),
+(min-resolution: 2dppx) and (max-width: 1199px) {
+        .products__ice-coffee {
+                &::before {
+                        background-image: url(../images/products/products-ice-coffee@2.jpg);
+                        background-size: cover;
+                }
+        }
 }
 
 .products__milkshakes {
         position: relative;
-        background: #D6936D;
+        background: var(--milkshakes-bg-color);
 
         &::before {
-                        background-image: url(../images/products/products-milkshakes.png);
+                        background-image: url(../images/products/products-milkshakes.jpg);
                 }
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 1199px),
+(min-resolution: 192dpi) and (max-width: 1199px),
+(min-resolution: 2dppx) and (max-width: 1199px) {
+        .products__milkshakes {
+                &::before {
+                        background-image: url(../images/products/products-milkshakes@2.jpg);
+                        background-size: cover;
+                }
+        }
+}
 .products__card-title {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         
-        letter-spacing: 0.04em;
         text-transform: uppercase;
+        margin-top: 123px;
 
-        padding-top: 123px;
         margin-bottom: 40px;
 
         &::before {
@@ -107,7 +150,7 @@
 
         }
     
-        color: #131313;
+        color: var(--secondary-text-color);
 }
 
 .products__card-ice-cream {
@@ -131,16 +174,196 @@
 }
 
 .products__card-about {
-        font-size: 14px;
         line-height: 1.78;
-    
-        letter-spacing: 0.04em;
-
         margin-bottom: 90px;
-
-        color: #131313;
+        color: var(--secondary-text-color);
 }
 .products__btn {
     margin-bottom: 20px;
+    width: 40px;
 
+}
+
+// <===teblet===>
+
+@media screen and (min-width: 768px) {
+        .products__section {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: var(--tel-text-color);
+                background-image: url(../images/products/products-background-tablet.png);
+        }
+                @media (min-device-pixel-ratio: 2) and (max-width: 1199px),
+                (min-resolution: 192dpi) and (max-width: 1199px),
+                (min-resolution: 2dppx) and (max-width: 1199px) {
+                        .products__section {
+                                background-image: url(../images/products/products-background-tablet@2.png);
+                        }
+                }
+        .products-paragraph {
+                font-size: 22px;
+                line-height: 1.22;
+        }
+        
+        .products-title {
+                font-size: 34px;
+                line-height: 1.26;
+        }
+
+        .products__card-title {
+                margin-top: 110px;
+                font-size: 22px;
+        }
+        .products__list {
+                display: flex;
+                gap: 16px;
+                margin-top: 200px;
+        }
+
+        .products__items {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                height: 428px;
+
+                border-radius: 15px;
+                margin-bottom: 0;
+                min-width: 224px;
+                padding-right: 26px;
+                padding-left: 26px;
+        }
+
+        .products__card-about {
+                max-width: 172px;
+                margin-bottom: auto;
+        }
+}
+
+// <===desktop===>
+
+@media screen and (min-width: 1200px) {
+
+        .products__section {
+                max-width: 1600px;
+
+                margin-left: auto;
+                margin-right: auto;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: var(--tel-text-color);
+                background-image: url(../images/products/products-background-desktop.png);
+                }
+                
+                        @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+                        (min-resolution: 192dpi) and (min-width: 1200px),
+                        (min-resolution: 2dppx) and (min-width: 1200px) {
+                                .products__section {
+                                        background-image: url(../images/products/products-background-desktop@2.png);
+                                }
+                        }
+        .products-paragraph {
+                font-size: 30px;
+        }
+
+        .products-title {
+                font-size: 36px;
+                line-height: 1.25;
+        }
+
+        .products__list {
+                margin-top: 300px;
+        } 
+
+        .products__items {
+                width: 370px;
+                height: 535px;
+                padding-left: 62px;
+                padding-right: 62px;
+
+                &::before {
+                        top: -183;
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 150px;
+                }
+        }
+        
+        .products__ice-cream {
+                &::before {
+                                background-image: url(../images/products/products-ice-cream-desktop.jpg);
+                }
+        }
+
+                @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+                (min-resolution: 192dpi) and (min-width: 1200px),
+                (min-resolution: 2dppx) and (min-width: 1200px) {
+                        .products__ice-cream {
+                                &::before {
+                                        background-image: url(../images/products/products-ice-cream-desktop@2.jpg);
+        
+                                }
+                        }
+                }
+        .products__ice-coffee {
+                &::before {
+                        background-image: url(../images/products/products-ice-coffee-desktop.jpg);
+                }
+        }
+
+        @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        (min-resolution: 192dpi) and (min-width: 1200px),
+        (min-resolution: 2dppx) and (min-width: 1200px) {
+                .products__ice-coffee {
+                        &::before {
+                        background-image: url(../images/products/products-ice-coffee-desktop@2.jpg);
+
+                        }
+                }
+}
+        .products__milkshakes {
+                &::before {
+                        background-image: url(../images/products/products-milkshakes-desktop.jpg);
+                }
+        }
+
+        @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        (min-resolution: 192dpi) and (min-width: 1200px),
+        (min-resolution: 2dppx) and (min-width: 1200px) {
+                .products__milkshakes {
+                        &::before {
+                                background-image: url(../images/products/products-milkshakes-desktop@2.jpg);
+
+                        }
+                }
+}
+
+        .products__card-title {
+                &::before {
+                        width: 300px;
+                        height: 300;
+                        border-radius: 150px;
+                        top: -166;
+
+                }
+        }
+
+        .products__card-title {
+                font-size: 30px;
+                margin-top: 166px;
+                margin-bottom: 65px;
+        }
+
+        .products__card-about {
+                font-size: 16px;
+                line-height: 1.75;
+                max-width: 242px;
+        }
+
+        .products__btn  {
+                margin-bottom: 60px;
+        }
 }
