@@ -1,1 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: var(--mobile-primary-font-size);
+    letter-spacing: var(--primary-letter-spacing);
+}

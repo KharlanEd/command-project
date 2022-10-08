@@ -1,0 +1,76 @@
+.gallery-reviews-contaner {
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(
+      to bottom,
+      var(--primary-bg-color) 0px 24px,
+      transparent 24px 100%
+    ),
+    url('../images/back-gallery-mobile.jpg');
+
+  height: 1070px;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+        to bottom,
+        var(--primary-bg-color) 0px 24px,
+        transparent 24px 100%
+      ),
+      url('../images/back-gallery-mobile@2x.jpg');
+    height: 1070px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--primary-bg-color) 0px 164px,
+        transparent 164px 100%
+      ),
+      url('../images/back-gallery-tablet.jpg');
+    height: 1124px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    // max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--primary-bg-color) 0px 164px,
+        transparent 164px 100%
+      ),
+      url('../images/back-gallery-tablet@2x.jpg');
+    height: 1124px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to bottom,
+        var(--primary-bg-color) 0px 94px,
+        transparent 94px 100%
+      ),
+      url('../images/back-gallery-desktop.jpg');
+    height: 1118px;
+    max-width: 1600px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--primary-bg-color) 0px 94px,
+        transparent 94px 100%
+      ),
+      url('../images/back-gallery-desktop@2x.jpg');
+    height: 1118px;
+    max-width: 1600px;
+  }
+}
