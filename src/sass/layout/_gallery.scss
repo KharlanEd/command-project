@@ -6,10 +6,10 @@
   background-position: center center;
   background-image: linear-gradient(
       to bottom,
-      var(--primary-bg-color) 0px 24px,
+      #84a178 0px 24px,
       transparent 24px 100%
     ),
-    url('../images/back-gallery-mobile.jpg');
+    url('../images/gallery/back-gallery-mobile.jpg');
 
   height: 1070px;
 
@@ -18,10 +18,10 @@
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: linear-gradient(
         to bottom,
-        var(--primary-bg-color) 0px 24px,
+        #84a178 0px 24px,
         transparent 24px 100%
       ),
-      url('../images/back-gallery-mobile@2x.jpg');
+      url('../images/gallery/back-gallery-mobile@2x.jpg');
     height: 1070px;
   }
 
@@ -29,10 +29,10 @@
     // max-width: 768px;
     background-image: linear-gradient(
         to bottom,
-        var(--primary-bg-color) 0px 164px,
+        #84a178 0px 164px,
         transparent 164px 100%
       ),
-      url('../images/back-gallery-tablet.jpg');
+      url('../images/gallery/back-gallery-tablet.jpg');
     height: 1124px;
   }
 
@@ -42,20 +42,20 @@
     // max-width: 768px;
     background-image: linear-gradient(
         to bottom,
-        var(--primary-bg-color) 0px 164px,
+        #84a178 0px 164px,
         transparent 164px 100%
       ),
-      url('../images/back-gallery-tablet@2x.jpg');
+      url('../images/gallery/back-gallery-tablet@2x.jpg');
     height: 1124px;
   }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to bottom,
-        var(--primary-bg-color) 0px 94px,
+        #84a178 0px 94px,
         transparent 94px 100%
       ),
-      url('../images/back-gallery-desktop.jpg');
+      url('../images/gallery/back-gallery-desktop.jpg');
     height: 1118px;
     max-width: 1600px;
   }
@@ -63,14 +63,86 @@
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    max-width: 1600px;
     background-image: linear-gradient(
         to bottom,
-        var(--primary-bg-color) 0px 94px,
+        #84a178 0px 94px,
         transparent 94px 100%
       ),
-      url('../images/back-gallery-desktop@2x.jpg');
+      url('../images/gallery/back-gallery-desktop@2x.jpg');
     height: 1118px;
     max-width: 1600px;
+  }
+}
+
+.gallery-contaner {
+  position: relative;
+
+  @media screen and (max-width: 479px) {
+    width: calc(100vw - 40px);
+    height: calc((100vw - 40px) * 0.466);
+  }
+
+  width: 440px;
+  height: 205px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
+
+.gallery-contaner__image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: auto;
+  height: 100%;
+  border-radius: 7px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+  overflow: hidden;
+
+  -webkit-animation: gallery-anim 9s infinite;
+  -moz-animation: gallery-anim 9s infinite;
+  -o-animation: gallery-anim 9s infinite;
+  animation: gallery-anim 9s infinite;
+}
+
+.gallery-contaner__anim-01 {
+  animation-delay: 6s;
+}
+
+.gallery-contaner__anim-02 {
+  animation-delay: 3s;
+}
+
+.gallery-contaner__anim-03 {
+  animation-delay: 0s;
+}
+
+@keyframes gallery-anim {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
