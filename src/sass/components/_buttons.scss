@@ -1,0 +1,295 @@
+/* Кнопка Products */
+
+/* <button type="button" class="products-button" onclick="location.href='#'">
+    Products
+</button> */
+
+.products-button {
+    font-family: inherit;
+    font-weight: 600;
+
+    font-size: 8px;
+    line-height: 1.2;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    padding: 7px 12px;
+
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.products-button:hover {
+    border-color: var(--hover-focus-color);
+}
+
+.products-button:focus {
+    color: var(--primary-text-color);
+    border-color: var(--hover-focus-color);
+}
+
+.products-button:disabled {
+    border-color: var(--disabled-color);
+}
+
+@media screen and (min-width:768px) {
+    .products-button {
+
+    font-size: 14px;
+    line-height: 1.29;
+
+    border-radius: 10px;
+
+    padding: 12px 34px;
+}
+}
+
+/* Кнопка How it’s made? */
+
+/* <button type="button" class="about-button" onclick="location.href='#'">
+    How it’s made?
+</button> */
+
+.about-button {
+    font-family: inherit;
+    font-weight: 600;
+
+    font-size: 8px;
+    line-height: 1.2;
+
+    text-decoration-line: underline;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--accent-color);
+
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    padding: 7px 10px;
+
+    transition: color var(--transition-dur-and-func);
+}
+
+.about-button:hover {
+    color: var(--hover-focus-color);
+}
+
+.about-button:focus {
+    color: var(--primary-text-color);
+}
+
+.about-button:disabled {
+    color: var(--disabled-color);
+}
+
+@media screen and (min-width:768px) {
+    .about-button {
+
+        font-size: 14px;
+        line-height: 1.21;
+
+        padding: 12px 22px;
+
+        border-radius: 10px;
+    }
+}
+
+/* Кнопки / Read more / Our Locations / Buy now */
+
+/* <button type="button" class="read-button" onclick="location.href='#'">
+    Read more
+    <svg class="button-icon">
+        <use href="./images/symbol-defs.svg#icon-angle"></use>
+    </svg>
+</button> */
+
+.read-button {
+    font-family: inherit;
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 1.29;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+
+    border: none;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    padding: 12px 34px;
+
+    transition: background-color var(--transition-dur-and-func);
+} 
+
+.read-button:hover {
+    background-color: var(--hover-focus-color);
+}
+
+.read-button:focus {
+    color: var(--primary-text-color);
+    background-color: var(--hover-focus-color);
+}
+
+.read-button:disabled {
+    background-color: var(--disabled-color);
+}
+
+.button-icon {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+    margin-left: 5px;
+}
+
+/* Кнопка Franchise */
+
+/* <button type="button" class="franchise-button" onclick="location.href='#'">
+    Franchise
+    <svg class="button-icon">
+        <use href="./images/symbol-defs.svg#icon-angle"></use>
+    </svg>
+</button> */
+
+.franchise-button {
+    font-family: inherit;
+        font-weight: 600;
+
+        font-size: 14px;
+        line-height: 1.29;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: var(--secondary-text-color);
+
+        border: 2px solid var(--accent-color);
+        border-radius: 10px;
+        background-color: transparent;
+
+        cursor: pointer;
+
+        padding: 12px 46px;
+
+        transition: border-color var(--transition-dur-and-func);
+    }
+
+    .franchise-button:hover {
+        border-color: var(--hover-focus-color);
+    }
+
+    .franchise-button:focus {
+        color: var(--primary-text-color);
+        border-color: var(--hover-focus-color);
+    }
+
+    .franchise-button:disabled {
+        border-color: var(--disabled-color);
+    }
+
+/* Кнопка Submit */
+
+/* <button type="submit" class="submit-button">Submit </button> */
+
+.submit-button {
+    font-family: inherit;
+    font-weight: 600;
+
+    font-size: 12px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+
+    border: none;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    padding: 12px 34px;
+
+    transition: background-color var(--transition-dur-and-func);
+
+}
+.submit-button:hover {
+    background-color: var(--hover-focus-color);
+}
+
+.submit-button:focus {
+    color: var(--primary-text-color);
+    background-color: var(--hover-focus-color);
+}
+
+.submit-button:disabled {
+    background-color: var(--disabled-color);
+}
+
+@media screen and (min-width:768px) {
+    .submit-button {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
+
+/* Кнопка-стрілка */
+
+/* <button type="button" class="arrow-button" onclick="location.href='#'">
+    <svg class="arrow-button-icon">
+    <use href="./images/symbol-defs.svg#icon-arrow40"></use>
+    </svg>
+</button> */
+
+.arrow-button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: var(--secondary-text-color);
+
+        border: none;
+        background-color: transparent;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        padding: 10px;
+}
+.arrow-button-icon {
+    width: 40px;
+    height: 14px;
+
+    transition: width var(--transition-dur-and-func);
+}
+.arrow-button:hover .arrow-button-icon {
+    width: 50px;
+}
+.arrow-button:focus .arrow-button-icon {
+    width: 50px;
+    stroke: var(--secondary-text-color);
+    stroke-width: 1px;
+}
