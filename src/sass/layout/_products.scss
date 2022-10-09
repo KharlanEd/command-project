@@ -1,10 +1,22 @@
 .products__section {
+        width: 100%;
+        background-color: var(--tel-text-color);
         padding-top: 60px;
         padding-bottom: 60px;
+        background-position: center;
+        background-image: url(../images/products/products-bcg-mobile.png);
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+(min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px) {
+        .products__section {
+                background-image: url(../images/products/products-bcg-mobile@2.png);
+        }
+}
 .products {
     text-align: center;
+    width: auto;
 }
 
 .products-paragraph {
@@ -34,16 +46,14 @@
 .products__list {
         display: inline-block;
         margin-top: 148px;
+        max-width: 450px;
+
 
 }
 
 .products__items {
         display: inline-block;
         border-radius: 24px;
-        width: 100%;
-        min-width: 280px;
-        max-width: 480px;
-
         margin-bottom: 163px;
 
         padding-left: 40px;
@@ -179,9 +189,8 @@
         color: var(--secondary-text-color);
 }
 .products__btn {
-    margin-bottom: 20px;
     width: 40px;
-
+    margin-bottom: 20px;
 }
 
 // <===teblet===>
@@ -276,6 +285,7 @@
 
         .products__list {
                 margin-top: 300px;
+                max-width: 1200px;
         } 
 
         .products__items {
