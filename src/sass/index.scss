@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/_is-hidden';
 
 @import './base/common';
 @import './base/reset';
@@ -12,6 +13,7 @@
 @import './components/modal-read-more';
 @import './components/modal-our-location';
 @import './components/modal-franchise';
+@import './components/backdrop';
 
 @import './layout/header';
 @import './layout/hero';
@@ -22,4 +24,3 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
-
