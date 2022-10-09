@@ -9,6 +9,7 @@
 .header {
     position: absolute;
     width:100%;
+    z-index: 110;
 }
 
 .nav-conteiner {
@@ -32,7 +33,7 @@
     gap:27px;
 }
 .menu__link {
-    color: #F8D24E;
+    color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
@@ -40,7 +41,7 @@
 .menu__link:hover,
 .menu__link:focus,
 .curent {
-    color: #131313;
+    color: var(--secondary-text-color);
 }
 
 .header__button {
@@ -50,7 +51,7 @@
     align-items: center;
     padding: 12px 34px;
     border-radius: 10px;
-    background-color: #F8D24E;
+    background-color: var(--accent-color);
     }
     @media only screen and (max-width: 480px) {
         display: none;
