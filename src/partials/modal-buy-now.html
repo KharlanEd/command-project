@@ -1,96 +1,100 @@
-<!-- Modal Buy Now -->
-<div class="modal-buy-now">
-  <!-- Close-btn -->
-  <button type="button" class="modal-buy-now__btn-close">
-    <svg class="modal-buy-now__icon-close">
-      <use href="./images/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-  <!-- /Close btn -->
-  <!-- title -->
-  <p class="modal-buy-now__title">Buy now</p>
-  <!-- /title -->
-  <!-- form -->
-  <form action="#" class="modal-buy-now__form">
-    <!-- list of goods -->
-    <ul class="modal-buy-now__list list">
-      <li class="modal-buy-now__item">
-        <div class="modal-buy-now__thumb">
-          <input
-            type="checkbox"
-            name="Ice cream"
-            class="modal-buy-now__check modal-buy-now__check_green visually-hidden"
-            id="check-icecream"
-          />
-          <label
-            for="check-icecream"
-            class="modal-buy-now__label modal-buy-now__label_green"
-          >
-            <div class="modal-buy-now__img modal-buy-now__img_green"></div>
-            <div class="modal-buy-now__text">Ice cream</div>
-          </label>
-        </div>
-      </li>
-      <li class="modal-buy-now__item">
-        <div class="modal-buy-now__thumb">
-          <input
-            type="checkbox"
-            name="Ice coffee"
-            class="modal-buy-now__check modal-buy-now__check_yellow visually-hidden"
-            id="check-icecoffee"
-          />
-          <label
-            for="check-icecoffee"
-            class="modal-buy-now__label modal-buy-now__label_yellow"
-          >
-            <div class="modal-buy-now__img modal-buy-now__img_yellow"></div>
-            <div class="modal-buy-now__text">Ice coffee</div>
-          </label>
-        </div>
-      </li>
-      <li class="modal-buy-now__item">
-        <div class="modal-buy-now__thumb">
-          <input
-            type="checkbox"
-            name="Milkshake"
-            class="modal-buy-now__check modal-buy-now__check_brown visually-hidden"
-            id="check-milkshake"
-          />
-          <label
-            for="check-milkshake"
-            class="modal-buy-now__label modal-buy-now__label_brown"
-          >
-            <div class="modal-buy-now__img modal-buy-now__img_brown"></div>
-            <div class="modal-buy-now__text">Milkshake</div>
-          </label>
-        </div>
-      </li>
-    </ul>
-    <!-- /list of goods -->
-    <!-- contacts info -->
-    <div class="modal-buy-now__contacts">
-      <input
-        type="text"
-        name="name"
-        class="modal-buy-now__user-name"
-        placeholder="Name"
-      />
-      <input
-        type="tel"
-        name="telephone"
-        class="modal-buy-now__phone"
-        placeholder="Phone"
-      />
-      <textarea
-        name="comments"
-        id="comments"
-        class="modal-buy-now__comments"
-        placeholder="Comment"
-      ></textarea>
-    </div>
-    <!-- /contacts info -->
-    <button type="submit" class="modal-buy-now__btn">Submit</button>
-  </form>
-  <!-- /form -->
+<!-- backdrop -->
+<div class="backdrop is-hidden">
+  <!-- Modal Buy Now -->
+  <div class="modal-buy-now">
+    <!-- Close-btn -->
+    <button type="button" class="modal-buy-now__btn-close">
+      <svg class="modal-buy-now__icon-close">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <!-- /Close btn -->
+    <!-- title -->
+    <p class="modal-buy-now__title">Buy now</p>
+    <!-- /title -->
+    <!-- form -->
+    <form action="#" class="modal-buy-now__form">
+      <!-- list of goods -->
+      <ul class="modal-buy-now__list list">
+        <li class="modal-buy-now__item">
+          <div class="modal-buy-now__thumb">
+            <input
+              type="checkbox"
+              name="Ice cream"
+              class="modal-buy-now__check modal-buy-now__check_green visually-hidden"
+              id="check-icecream"
+            />
+            <label
+              for="check-icecream"
+              class="modal-buy-now__label modal-buy-now__label_green"
+            >
+              <div class="modal-buy-now__img modal-buy-now__img_green"></div>
+              <div class="modal-buy-now__text">Ice cream</div>
+            </label>
+          </div>
+        </li>
+        <li class="modal-buy-now__item">
+          <div class="modal-buy-now__thumb">
+            <input
+              type="checkbox"
+              name="Ice coffee"
+              class="modal-buy-now__check modal-buy-now__check_yellow visually-hidden"
+              id="check-icecoffee"
+            />
+            <label
+              for="check-icecoffee"
+              class="modal-buy-now__label modal-buy-now__label_yellow"
+            >
+              <div class="modal-buy-now__img modal-buy-now__img_yellow"></div>
+              <div class="modal-buy-now__text">Ice coffee</div>
+            </label>
+          </div>
+        </li>
+        <li class="modal-buy-now__item">
+          <div class="modal-buy-now__thumb">
+            <input
+              type="checkbox"
+              name="Milkshake"
+              class="modal-buy-now__check modal-buy-now__check_brown visually-hidden"
+              id="check-milkshake"
+            />
+            <label
+              for="check-milkshake"
+              class="modal-buy-now__label modal-buy-now__label_brown"
+            >
+              <div class="modal-buy-now__img modal-buy-now__img_brown"></div>
+              <div class="modal-buy-now__text">Milkshake</div>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <!-- /list of goods -->
+      <!-- contacts info -->
+      <div class="modal-buy-now__contacts">
+        <input
+          type="text"
+          name="name"
+          class="modal-buy-now__user-name"
+          placeholder="Name"
+        />
+        <input
+          type="tel"
+          name="telephone"
+          class="modal-buy-now__phone"
+          placeholder="Phone"
+        />
+        <textarea
+          name="comments"
+          id="comments"
+          class="modal-buy-now__comments"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <!-- /contacts info -->
+      <button type="submit" class="modal-buy-now__btn">Submit</button>
+    </form>
+    <!-- /form -->
+  </div>
+  <!-- /Modal Buy Now -->
 </div>
-<!-- Modal Buy Now -->
+<!-- /backdrop -->
