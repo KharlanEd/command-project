@@ -1,18 +1,44 @@
 .testimonials {
-    padding: 75px 0;
-    background-image: url(../images/testimonials/background.jpg);
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 75px 0;
 }
 
-.testimonials__slide {
+.testimonials__container {
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.testimonials__wrapper {
+    position: relative;
+}
+
+.testimonials__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .6s ease;
+    margin-bottom: 14px;
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .testimonials__image {
@@ -41,15 +67,39 @@
     color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 480px){
-    .testimonials {
-        padding-left: 20px;
-        padding-right: 20px;
-    }    
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dot {
+    background: none;
+    border: none;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    transition: .5s;
+}
+
+.active {
+    width: 32px;
+    background-color: var(--primary-bg-color);
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    .testimonials__text {
+        width: 440px
+    }
 }
 
 @media screen and (min-width: 768px) {
     .testimonials__text {
+        width: 705px;
         padding: 29px 80px;
         font-weight: 500;
         font-size: 14px;
@@ -59,14 +109,10 @@
 }
 
 @media screen and (min-width: 1200px){
-    .testimonials {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
     .testimonials__text {
         width: 968px;
         font-weight: 500;
         font-size: 16px;
+        border-radius: 24px;
     }
 }
