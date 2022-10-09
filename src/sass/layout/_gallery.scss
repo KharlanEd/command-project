@@ -11,7 +11,8 @@
     ),
     url('../images/gallery/back-gallery-mobile.jpg');
 
-  height: 1070px;
+  // height: 1070px;
+  height: auto;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -22,7 +23,8 @@
         transparent 24px 100%
       ),
       url('../images/gallery/back-gallery-mobile@2x.jpg');
-    height: 1070px;
+    // height: 1070px;
+    height: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -33,7 +35,8 @@
         transparent 164px 100%
       ),
       url('../images/gallery/back-gallery-tablet.jpg');
-    height: 1124px;
+    // height: 1124px;
+    height: auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -46,7 +49,8 @@
         transparent 164px 100%
       ),
       url('../images/gallery/back-gallery-tablet@2x.jpg');
-    height: 1124px;
+    // height: 1124px;
+    height: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -56,8 +60,9 @@
         transparent 94px 100%
       ),
       url('../images/gallery/back-gallery-desktop.jpg');
-    height: 1118px;
+    // height: 1118px;
     max-width: 1600px;
+    height: auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -70,7 +75,8 @@
       ),
       url('../images/gallery/back-gallery-desktop@2x.jpg');
     height: 1118px;
-    max-width: 1600px;
+    // max-width: 1600px;
+    height: auto;
   }
 }
 
@@ -101,8 +107,9 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  width: auto;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 7px;
 
   @media screen and (min-width: 768px) {
