@@ -11,3 +11,9 @@
     transform var(--duration-and-timing-function),
     visibility var(--duration-and-timing-function);
 }
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
