@@ -1,8 +1,12 @@
 //STYLES MODAL WINDOW
 .modal-buy-now {
-  position: relative;
+  position: absolute;
+  z-index: 120;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 280px;
-  height: 986px; //auto
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 8px;
