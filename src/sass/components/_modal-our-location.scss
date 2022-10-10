@@ -1,4 +1,4 @@
-.modal-location {
+.modal {
     position: absolute;
     z-index: 120;
     top: 50%;
@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 
-.modal-location__btn-close {
+.modal__btn-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -24,18 +24,19 @@
     cursor: pointer;
 }
 
-.modal-location__title {
+.modal__title {
     margin-bottom: 20px;
 
     font-family: Seymour One, sans-serif;
     font-weight: 400;
     font-size: var(--modal-buy-font-size);
     line-height: 1.5;
+    letter-spacing: var(--third-letter-spacing);
     text-align: center;
     color: var(--secondary-text-color);
 }
 
-.modal-location__btn {
+.modal__btn {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -47,7 +48,7 @@
     border-radius: 10px;
 }
 
-.modal-location__link {
+.modal__link {
     color: var(--secondary-text-color);
     font-weight: 600;
     font-size: var(--mobile-secondary-font-size);
@@ -55,18 +56,18 @@
 }
 
 @media screen and (min-width: 768px) {
-    .modal-location {
+    .modal {
         width: 568px;
         height: 458px;
         padding: 32px 60px;
     }
 
-    .modal-location__btn-close {
+    .modal__btn-close {
         top: 20px;
         right: 20px;
     }
 
-    .modal-location__title {
+    .modal__title {
         margin-bottom: 32px;
     
         font-family: Seymour One, sans-serif;
@@ -75,11 +76,11 @@
         line-height: 1.4;
     }
     
-    .modal-location__btn {
+    .modal__btn {
         margin-top: 32px;
     }
     
-    .modal-location__link {
+    .modal__link {
         font-size: var(--mobile-primary-font-size);
         line-height: 1.21;
     }

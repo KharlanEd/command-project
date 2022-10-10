@@ -1,0 +1,59 @@
+<div class="backdrop">
+  <div class="modal modal_height">
+    <button type="button" class="modal__btn-close">
+      <svg width="16" height="16">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title modal__title_width">
+      Thank you for your interest in owning an Ice Cream shop
+    </p>
+    <p class="modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal-form">
+      <label>
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form__input"
+          placeholder="Name"
+          pattern="[a-zA-Zа-яА-ЯіІїЇ'`]+"
+          required
+        />
+      </label>
+      <label>
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-form__input"
+          placeholder="Phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          required
+        />
+      </label>
+      <label>
+        <input
+          type="email"
+          name="user_email"
+          class="modal-form__input"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <label class="modal-form__textarea">
+        <textarea
+          name="user_message"
+          class="modal-form__message"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </form>
+    <button type="button" class="modal__btn read-button">Submit</button>
+  </div>
+</div>
