@@ -23,6 +23,10 @@
         background: transparent;
         border: 0;
         line-height: 0;
+        &:hover,
+        &:focus  {
+                fill: var(--border-color-modal)
+        }
 }
 
 .modal-ingredients__icon-close {
@@ -57,11 +61,30 @@
             width: 130px;
             height: 130px;
             border-radius: 100px;
-            box-shadow: 0px 5px 19px rgba(10, 136, 23, 0.25);
-            background-color: rgba(10, 136, 23, 0.25);
 
             z-index: -1;
         }
+}
+
+.modal-ingredients__ice-cream-container-color {
+        &::before {
+                box-shadow: 0px 5px 19px rgba(10, 136, 23, 0.25);
+                background-color: rgba(10, 136, 23, 0.25);
+        }
+}
+
+.modal-ingredients__ice-coffee-container-color {
+        &::before {
+                box-shadow: 0px 5px 19px rgba(248, 210, 78, 0.7);
+                background-color: rgba(248, 210, 78, 0.7);
+        }
+}
+
+.modal-ingredients__milkshakes-container-color {
+        &::before {
+                        box-shadow: 0px 5px 19px rgba(213, 117, 63, 0.7);
+                        background-color: rgba(213, 117, 63, 0.7);
+                }
 }
 
 .modal-ingredients__ice-cream {
@@ -81,10 +104,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid #9CBE8F;
         border-radius: 40px;
 
         width: 53px;
+}
+
+.modal-ingredients__ice-cream-color {
+        border: 2px solid #9CBE8F;
+}
+
+.modal-ingredients__ice-coffee-color {
+        border: 2px solid #EFD478;
+}
+
+.modal-ingredients__milkshakes-color {
+        border: 2px solid #D6936D;
 }
 
 .modal-ingredients__weight {
@@ -99,13 +133,29 @@
         width: 40px;
         height: 40px;
 
-        background: #9CBE8F;
-        border: 2px solid #9CBE8F;
         border-radius: 40px;
-        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
     
         color: var(--secondary-text-color);
 }
+
+.modal-ingredients__ice-cream-weight-color {
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+        background: #9CBE8F;
+        border: 2px solid #9CBE8F;
+}
+
+.modal-ingredients__ice-coffee-weight-color {
+        box-shadow: 0px 6px 20px rgba(248, 210, 78, 0.7);
+        background: #EFD478;
+        border: 2px solid #EFD478;
+}
+
+.modal-ingredients__milkshakes-weight-color {
+        box-shadow: 0px 6px 20px rgba(213, 117, 63, 0.7);
+        background: #D6936D;
+        border: 2px solid #D6936D;
+}
+
 
 .modal-ingredients__storage {
         font-size: 10px;

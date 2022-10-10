@@ -1,33 +1,64 @@
-<div class="backdrop is-hidden">
+<!-- MODAL ICE CREAM -->
+<div class="backdrop is-hidden" data-modal-ingredients1>
   <div class="modal-ingredients">
-    <button type="button" class="modal-ingredients__btn-close">
+    <button
+      type="button"
+      class="modal-ingredients__btn-close"
+      data-modal-close-ingredients1
+    >
       <svg class="modal-ingredients__icon-close">
-        <use href="./images/icons.svg#icon-close"></use>
+        <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
     <h2 class="modal-ingredients__main-title">Chololate icecream</h2>
-    <div class="modal-ingredients__ice-cream-container">
-      <img
-        class="modal-ingredients__ice-cream"
-        src="./images/products/modal-ingredients-ice-cream.jpg"
-        alt="ice cream"
-      />
+    <div
+      class="modal-ingredients__ice-cream-container modal-ingredients__ice-cream-container-color"
+    >
+      <picture>
+        <source
+          srcset="
+            ./images/products/modal-ingredients-ice-cream.jpg   1x,
+            ./images/products/modal-ingredients-ice-cream@2.jpg 2x
+          "
+        />
+        <img
+          class="modal-ingredients__ice-cream"
+          src="./images/products/modal-ingredients-ice-cream.jpg"
+          alt="ice cream"
+        />
+      </picture>
     </div>
     <ul class="modal-ingredients__list">
-      <li class="modal-ingredients__items">
-        <p class="modal-ingredients__weight">320</p>
+      <li class="modal-ingredients__items modal-ingredients__ice-cream-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-cream-weight-color"
+        >
+          320
+        </p>
         <p class="modal-ingredients__storage">kcal</p>
       </li>
-      <li class="modal-ingredients__items">
-        <p class="modal-ingredients__weight">4g</p>
+      <li class="modal-ingredients__items modal-ingredients__ice-cream-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-cream-weight-color"
+        >
+          4g
+        </p>
         <p class="modal-ingredients__storage">Prote...</p>
       </li>
-      <li class="modal-ingredients__items">
-        <p class="modal-ingredients__weight">8,2g</p>
+      <li class="modal-ingredients__items modal-ingredients__ice-cream-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-cream-weight-color"
+        >
+          8,2g
+        </p>
         <p class="modal-ingredients__storage">Fats</p>
       </li>
-      <li class="modal-ingredients__items">
-        <p class="modal-ingredients__weight">40,4g</p>
+      <li class="modal-ingredients__items modal-ingredients__ice-cream-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-cream-weight-color"
+        >
+          40,4g
+        </p>
         <p class="modal-ingredients__storage">Carbs</p>
       </li>
     </ul>
@@ -56,6 +87,240 @@
       <li class="modal-ingredients__products-ingredients">
         <p>Vanilla sugar</p>
         <p>10g</p>
+      </li>
+    </ul>
+    <form class="modal-ingredients__form">
+      <input
+        type="text"
+        name="name"
+        class="modal-ingredients__user-name"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        name="telephone"
+        class="modal-ingredients__phone"
+        placeholder="Phone"
+      />
+      <textarea
+        name="comments"
+        id="comments"
+        class="modal-ingredients__comments"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="modal-ingredients__btn submit-button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+<!-- MODAL ICE COFFEE -->
+<div class="backdrop is-hidden" data-modal-ingredients2>
+  <div class="modal-ingredients">
+    <button
+      type="button"
+      class="modal-ingredients__btn-close"
+      data-modal-close-ingredients2
+    >
+      <svg class="modal-ingredients__icon-close">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-ingredients__main-title">Ice Coffee</h2>
+    <div
+      class="modal-ingredients__ice-cream-container modal-ingredients__ice-coffee-container-color"
+    >
+      <picture>
+        <source
+          srcset="
+            ./images/products/modal-ingredients-ice-coffee.jpg   1x,
+            ./images/products/modal-ingredients-ice-coffee@2.jpg 2x
+          "
+        />
+        <img
+          class="modal-ingredients__ice-cream"
+          src="./images/products/modal-ingredients-ice-cream.jpg"
+          alt="ice cream"
+        />
+      </picture>
+    </div>
+    <ul class="modal-ingredients__list">
+      <li class="modal-ingredients__items modal-ingredients__ice-coffee-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-coffee-weight-color"
+        >
+          450
+        </p>
+        <p class="modal-ingredients__storage">kcal</p>
+      </li>
+      <li class="modal-ingredients__items modal-ingredients__ice-coffee-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-coffee-weight-color"
+        >
+          5g
+        </p>
+        <p class="modal-ingredients__storage">Prote...</p>
+      </li>
+      <li class="modal-ingredients__items modal-ingredients__ice-coffee-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-coffee-weight-color"
+        >
+          10g
+        </p>
+        <p class="modal-ingredients__storage">Fats</p>
+      </li>
+      <li class="modal-ingredients__items modal-ingredients__ice-coffee-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__ice-coffee-weight-color"
+        >
+          35.1g
+        </p>
+        <p class="modal-ingredients__storage">Carbs</p>
+      </li>
+    </ul>
+    <h2 class="modal-ingredients__secondary-title">Ingredients</h2>
+    <ul class="modal-ingredients__products-ingredients-list">
+      <li class="modal-ingredients__products-ingredients">
+        <p>Milk</p>
+        <p>150ml</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Belgian chocolate</p>
+        <p>25g</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Cream</p>
+        <p>150ml</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Cocoa powder</p>
+        <p>25g</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Sugar</p>
+        <p>20g</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Vanilla sugar</p>
+        <p>3g</p>
+      </li>
+    </ul>
+    <form class="modal-ingredients__form">
+      <input
+        type="text"
+        name="name"
+        class="modal-ingredients__user-name"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        name="telephone"
+        class="modal-ingredients__phone"
+        placeholder="Phone"
+      />
+      <textarea
+        name="comments"
+        id="comments"
+        class="modal-ingredients__comments"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="modal-ingredients__btn submit-button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL MILKSHAKES -->
+
+<div class="backdrop is-hidden" data-modal-ingredients3>
+  <div class="modal-ingredients">
+    <button
+      type="button"
+      class="modal-ingredients__btn-close"
+      data-modal-close-ingredients3
+    >
+      <svg class="modal-ingredients__icon-close">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-ingredients__main-title">Milkshakes</h2>
+    <div
+      class="modal-ingredients__ice-cream-container modal-ingredients__milkshakes-container-color"
+    >
+      <picture>
+        <source
+          srcset="
+            ./images/products/modal-ingredients-milkshakes.jpg   1x,
+            ./images/products/modal-ingredients-milkshakes@2.jpg 2x
+          "
+        />
+        <img
+          class="modal-ingredients__ice-cream"
+          src="./images/products/modal-ingredients-ice-cream.jpg"
+          alt="ice cream"
+        />
+      </picture>
+    </div>
+    <ul class="modal-ingredients__list">
+      <li class="modal-ingredients__items modal-ingredients__milkshakes-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__milkshakes-weight-color"
+        >
+          550
+        </p>
+        <p class="modal-ingredients__storage">kcal</p>
+      </li>
+      <li class="modal-ingredients__items modal-ingredients__milkshakes-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__milkshakes-weight-color"
+        >
+          7g
+        </p>
+        <p class="modal-ingredients__storage">Prote...</p>
+      </li>
+      <li class="modal-ingredients__items modal-ingredients__milkshakes-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__milkshakes-weight-color"
+        >
+          15g
+        </p>
+        <p class="modal-ingredients__storage">Fats</p>
+      </li>
+      <li class="modal-ingredients__items modal-ingredients__milkshakes-color">
+        <p
+          class="modal-ingredients__weight modal-ingredients__milkshakes-weight-color"
+        >
+          40,9g
+        </p>
+        <p class="modal-ingredients__storage">Carbs</p>
+      </li>
+    </ul>
+    <h2 class="modal-ingredients__secondary-title">Ingredients</h2>
+    <ul class="modal-ingredients__products-ingredients-list">
+      <li class="modal-ingredients__products-ingredients">
+        <p>Milk</p>
+        <p>350ml</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Belgian chocolate</p>
+        <p>25g</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Cream</p>
+        <p>200ml</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Cocoa powder</p>
+        <p>15g</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Sugar</p>
+        <p>20g</p>
+      </li>
+      <li class="modal-ingredients__products-ingredients">
+        <p>Vanilla sugar</p>
+        <p>3g</p>
       </li>
     </ul>
     <form class="modal-ingredients__form">
