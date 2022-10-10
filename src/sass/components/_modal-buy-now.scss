@@ -1,4 +1,11 @@
 //STYLES MODAL WINDOW
+@media screen and (max-width: 480px) {
+  .modal-buy-now {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
 .modal-buy-now {
   position: absolute;
   z-index: 120;
@@ -73,26 +80,23 @@
 
 .modal-buy-now__label_green {
   border: 2px solid var(--border-bg-color-label-green);
+  .modal-buy-now__check_green:checked + & {
+    background-color: var(--border-bg-color-label-green);
+  }
 }
 
 .modal-buy-now__label_yellow {
   border: 2px solid var(--border-bg-color-label-yellow);
+  .modal-buy-now__check_yellow:checked + & {
+    background-color: var(--border-bg-color-label-yellow);
+  }
 }
 
 .modal-buy-now__label_brown {
   border: 2px solid var(--border-bg-color-label-brown);
-}
-
-.modal-buy-now__check_green:checked + .modal-buy-now__label_green {
-  background-color: var(--border-bg-color-label-green);
-}
-
-.modal-buy-now__check_yellow:checked + .modal-buy-now__label_yellow {
-  background-color: var(--border-bg-color-label-yellow);
-}
-
-.modal-buy-now__check_brown:checked + .modal-buy-now__label_brown {
-  background-color: var(--border-bg-color-label-brown);
+  .modal-buy-now__check_brown:checked + & {
+    background-color: var(--border-bg-color-label-brown);
+  }
 }
 
 .modal-buy-now__img {
@@ -173,7 +177,11 @@
   font-size: var(--mobile-secondary-font-size);
   line-height: 1.41;
   padding: 8px 12px;
+}
 
+.modal-buy-now__user-name::placeholder,
+.modal-buy-now__phone::placeholder,
+.modal-buy-now__comments::placeholder {
   color: var(--secondary-text-color);
 }
 
@@ -185,4 +193,65 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.modal-buy-now__user-name:not(:placeholder-shown):valid,
+.modal-buy-now__phone:not(:placeholder-shown):valid {
+  border-color: var(--valid-form-border-color);
+}
+.modal-buy-now__user-name:not(:placeholder-shown):invalid,
+.modal-buy-now__phone:not(:placeholder-shown):invalid {
+  border-color: var(--invalid-form-border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-now {
+    width: 568px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-buy-now__btn-close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal-buy-now__icon-close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-buy-now__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .modal-buy-now__title {
+    padding-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  .modal-buy-now__contacts {
+    width: 368px;
+  }
+
+  .modal-buy-now__user-name,
+  .modal-buy-now__phone {
+    height: 42px;
+  }
+
+  .modal-buy-now__comments {
+    height: 84px;
+  }
+
+  .modal-buy-now__user-name,
+  .modal-buy-now__phone,
+  .modal-buy-now__comments {
+    padding: 16px 12px;
+    font-size: var(--modal-buy-font-size);
+  }
 }
