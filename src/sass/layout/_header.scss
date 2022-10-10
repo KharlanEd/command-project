@@ -1,18 +1,11 @@
 
-.link {
-    text-decoration: none;
-  }
-  
-.list {
-    list-style: none;
-  }
 .header {
     position: absolute;
     width:100%;
     z-index: 110;
 }
 
-.nav-conteiner {
+.nav-container {
     display: flex;
     justify-content: space-between;
     height: 80px;
