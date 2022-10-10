@@ -11,7 +11,9 @@
     ),
     url('../images/gallery/back-gallery-mobile.jpg');
 
-  height: 1070px;
+  // height: 1070px;
+  padding-bottom: 325px;
+  height: auto;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -22,7 +24,9 @@
         transparent 24px 100%
       ),
       url('../images/gallery/back-gallery-mobile@2x.jpg');
-    height: 1070px;
+    // height: 1070px;
+    padding-bottom: 325px;
+    height: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -33,7 +37,9 @@
         transparent 164px 100%
       ),
       url('../images/gallery/back-gallery-tablet.jpg');
-    height: 1124px;
+    // height: 1124px;
+    padding-bottom: 310px;
+    height: auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -46,7 +52,9 @@
         transparent 164px 100%
       ),
       url('../images/gallery/back-gallery-tablet@2x.jpg');
-    height: 1124px;
+    // height: 1124px;
+    padding-bottom: 310px;
+    height: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -56,8 +64,10 @@
         transparent 94px 100%
       ),
       url('../images/gallery/back-gallery-desktop.jpg');
-    height: 1118px;
-    max-width: 1600px;
+    // height: 1118px;
+    max-width: 1200px;
+    padding-bottom: 120px;
+    height: auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -69,8 +79,10 @@
         transparent 94px 100%
       ),
       url('../images/gallery/back-gallery-desktop@2x.jpg');
-    height: 1118px;
-    max-width: 1600px;
+    // height: 1118px;
+    max-width: 1200px;
+    padding-bottom: 120px;
+    height: auto;
   }
 }
 
@@ -82,8 +94,10 @@
     height: calc((100vw - 40px) * 0.466);
   }
 
-  width: 440px;
-  height: 205px;
+  @media screen and (min-width: 480px) {
+    width: 440px;
+    height: 205px;
+  }
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
@@ -101,8 +115,9 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  width: auto;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 7px;
 
   @media screen and (min-width: 768px) {
