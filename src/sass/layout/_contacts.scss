@@ -84,6 +84,17 @@ screen and (min-width: 280px) {
     }
 }
 
+.contacts-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-left: auto;
+}
+
 @media screen and (min-width: 768px),
 screen and (min-width: 1200px) {
    
@@ -103,7 +114,13 @@ screen and (min-width: 1200px) {
     .contacts__card {
         flex-basis: calc((100% - 64px) / 3);
     }
+
+    .contacts-btn {
+        flex-direction: row;
+        margin-top: 60px;
+    }
 }
+
 
 @media screen and (min-width: 480px) {
     .container-contacts {
@@ -122,5 +139,9 @@ screen and (min-width: 1200px) {
 @media screen and (min-width: 1200px) {
     .container-contacts {
         width: 1200px;
+    }
+
+    .contacts-btn {
+        margin-top: 64px;
     }
 }

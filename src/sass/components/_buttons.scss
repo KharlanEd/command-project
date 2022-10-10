@@ -142,12 +142,6 @@
     transition: background-color var(--transition-dur-and-func);
 } 
 
-.read-button__margin {
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .read-button:hover {
     background-color: var(--hover-focus-color);
 }
@@ -299,3 +293,4 @@
     stroke: var(--secondary-text-color);
     stroke-width: 1px;
 }
+
