@@ -1,12 +1,12 @@
 //STYLES MODAL WINDOW
 @media screen and (max-width: 480px) {
-  .modal-buy-now {
+  .modal-window {
     padding-right: 8px;
     padding-left: 8px;
   }
 }
 
-.modal-buy-now {
+.modal-window {
   position: absolute;
   z-index: 120;
   top: 8px;
@@ -22,7 +22,7 @@
   border-radius: 10px;
 }
 
-.modal-buy-now__btn-close {
+.modal-window__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -32,12 +32,12 @@
   line-height: 0;
 }
 
-.modal-buy-now__icon-close {
+.modal-window__icon-close {
   width: 16px;
   height: 16px;
 }
-
-.modal-buy-now__title {
+// MODAL TITLE
+.modal-window__title {
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: var(--modal-buy-font-size);
@@ -48,6 +48,13 @@
 
   color: var(--secondary-text-color);
 }
+
+.modal-window__title {
+  padding-top: 24px;
+  margin-bottom: 40px;
+}
+
+// MODAL TITLE  END
 
 .modal-buy-now__list {
   display: flex;
@@ -142,8 +149,8 @@
   color: var(--secondary-text-color);
   padding-bottom: 20px;
 }
-
-.modal-buy-now__contacts {
+// CONTACTS MOBILE
+.modal-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,9 +161,9 @@
   margin-bottom: 24px;
 }
 
-.modal-buy-now__user-name,
-.modal-buy-now__phone,
-.modal-buy-now__comments {
+.modal-contacts__user-name,
+.modal-contacts__phone,
+.modal-contacts__comments {
   width: 100%;
   height: 32px;
   background: var(--input-bg-color);
@@ -164,13 +171,13 @@
   border-radius: 10px;
 }
 
-.modal-buy-now__comments {
+.modal-contacts__comments {
   height: 64px;
 }
 
-.modal-buy-now__user-name,
-.modal-buy-now__phone,
-.modal-buy-now__comments {
+.modal-contacts__user-name,
+.modal-contacts__phone,
+.modal-contacts__comments {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -179,15 +186,26 @@
   padding: 8px 12px;
 }
 
-.modal-buy-now__user-name::placeholder,
-.modal-buy-now__phone::placeholder,
-.modal-buy-now__comments::placeholder {
+.modal-contacts__user-name::placeholder,
+.modal-contacts__phone::placeholder,
+.modal-contacts__comments::placeholder {
   color: var(--secondary-text-color);
 }
 
-.modal-buy-now__comments {
+.modal-contacts__comments {
   resize: none;
 }
+
+.modal-contacts__user-name:not(:placeholder-shown):valid,
+.modal-contacts__phone:not(:placeholder-shown):valid {
+  border-color: var(--valid-form-border-color);
+}
+.modal-contacts__user-name:not(:placeholder-shown):invalid,
+.modal-contacts__phone:not(:placeholder-shown):invalid {
+  border-color: var(--invalid-form-border-color);
+}
+
+// CONTACTS MOBILE END
 
 .modal-buy-now__btn {
   display: block;
@@ -196,29 +214,20 @@
   margin-bottom: 32px;
 }
 
-.modal-buy-now__user-name:not(:placeholder-shown):valid,
-.modal-buy-now__phone:not(:placeholder-shown):valid {
-  border-color: var(--valid-form-border-color);
-}
-.modal-buy-now__user-name:not(:placeholder-shown):invalid,
-.modal-buy-now__phone:not(:placeholder-shown):invalid {
-  border-color: var(--invalid-form-border-color);
-}
-
 @media screen and (min-width: 768px) {
-  .modal-buy-now {
+  .modal-window {
     width: 568px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  .modal-buy-now__btn-close {
+  .modal-window__btn-close {
     top: 20px;
     right: 20px;
   }
 
-  .modal-buy-now__icon-close {
+  .modal-window__icon-close {
     width: 20px;
     height: 20px;
   }
@@ -230,28 +239,25 @@
     margin-bottom: 40px;
   }
 
-  .modal-buy-now__title {
-    padding-top: 24px;
-    margin-bottom: 40px;
-  }
-
-  .modal-buy-now__contacts {
+  // CONTACTS MOBILE DESKTOP AND TABLET
+  .modal-contacts {
     width: 368px;
   }
 
-  .modal-buy-now__user-name,
-  .modal-buy-now__phone {
+  .modal-contacts__user-name,
+  .modal-contacts__phone {
     height: 42px;
   }
 
-  .modal-buy-now__comments {
+  .modal-contacts__comments {
     height: 84px;
   }
 
-  .modal-buy-now__user-name,
-  .modal-buy-now__phone,
-  .modal-buy-now__comments {
+  .modal-contacts__user-name,
+  .modal-contacts__phone,
+  .modal-contacts__comments {
     padding: 16px 12px;
     font-size: var(--modal-buy-font-size);
   }
+  // CONTACTS MOBILE DESKTOP AND TABLET END
 }
