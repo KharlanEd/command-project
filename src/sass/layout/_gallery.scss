@@ -12,6 +12,7 @@
     url('../images/gallery/back-gallery-mobile.jpg');
 
   // height: 1070px;
+  padding-bottom: 325px;
   height: auto;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -24,6 +25,7 @@
       ),
       url('../images/gallery/back-gallery-mobile@2x.jpg');
     // height: 1070px;
+    padding-bottom: 325px;
     height: auto;
   }
 
@@ -36,6 +38,7 @@
       ),
       url('../images/gallery/back-gallery-tablet.jpg');
     // height: 1124px;
+    padding-bottom: 310px;
     height: auto;
   }
 
@@ -50,6 +53,7 @@
       ),
       url('../images/gallery/back-gallery-tablet@2x.jpg');
     // height: 1124px;
+    padding-bottom: 310px;
     height: auto;
   }
 
@@ -62,6 +66,7 @@
       url('../images/gallery/back-gallery-desktop.jpg');
     // height: 1118px;
     max-width: 1200px;
+    padding-bottom: 120px;
     height: auto;
   }
 
@@ -76,6 +81,7 @@
       url('../images/gallery/back-gallery-desktop@2x.jpg');
     // height: 1118px;
     max-width: 1200px;
+    padding-bottom: 120px;
     height: auto;
   }
 }
