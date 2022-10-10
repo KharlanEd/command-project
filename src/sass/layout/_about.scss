@@ -315,7 +315,7 @@
   font-size: 14px;
   line-height: 1.29;
 
-  display: flex;
+  // display: flex;
   align-items: center;
   text-align: center;
 
@@ -332,18 +332,6 @@
   transition: background-color var(--transition-dur-and-func);
 } 
 
-.read-button:hover {
-  background-color: var(--hover-focus-color);
-}
-
-.read-button:focus {
-  color: var(--primary-text-color);
-  background-color: var(--hover-focus-color);
-}
-
-.read-button:disabled {
-  background-color: var(--disabled-color);
-}
 
 .button-icon {
   width: 12px;
