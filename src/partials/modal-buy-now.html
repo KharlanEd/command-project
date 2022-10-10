@@ -1,16 +1,16 @@
 <!-- backdrop -->
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal>
   <!-- Modal Buy Now -->
-  <div class="modal-buy-now">
+  <div class="modal-buy-now modal-window">
     <!-- Close-btn -->
-    <button type="button" class="modal-buy-now__btn-close">
-      <svg class="modal-buy-now__icon-close">
-        <use href="./images/icons.svg#icon-close"></use>
+    <button type="button" class="modal-window__btn-close" data-modal-close>
+      <svg class="modal-window__icon-close">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
     <!-- /Close btn -->
     <!-- title -->
-    <p class="modal-buy-now__title">Buy now</p>
+    <p class="modal-window__title">Buy now</p>
     <!-- /title -->
     <!-- form -->
     <form action="#" class="modal-buy-now__form">
@@ -69,29 +69,37 @@
         </li>
       </ul>
       <!-- /list of goods -->
-      <!-- contacts info -->
-      <div class="modal-buy-now__contacts">
+      <!-- modal-contacts info -->
+      <div class="modal-contacts">
         <input
           type="text"
-          name="name"
-          class="modal-buy-now__user-name"
+          name="user-sname"
+          class="modal-contacts__user-name"
           placeholder="Name"
+          minlength="2"
+          pattern="[A-Za-z-А-Яа-яіІ-їЇ]"
+          required
         />
         <input
           type="tel"
           name="telephone"
-          class="modal-buy-now__phone"
+          class="modal-contacts__phone"
           placeholder="Phone"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+          title="Формат: 0671234567"
+          required
         />
         <textarea
           name="comments"
           id="comments"
-          class="modal-buy-now__comments"
+          class="modal-contacts__comments"
           placeholder="Comment"
         ></textarea>
       </div>
       <!-- /contacts info -->
-      <button type="submit" class="modal-buy-now__btn">Submit</button>
+      <button type="submit" class="modal-buy-now__btn read-button">
+        Submit
+      </button>
     </form>
     <!-- /form -->
   </div>
