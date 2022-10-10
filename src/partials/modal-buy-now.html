@@ -1,11 +1,11 @@
 <!-- backdrop -->
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal>
   <!-- Modal Buy Now -->
   <div class="modal-buy-now">
     <!-- Close-btn -->
-    <button type="button" class="modal-buy-now__btn-close">
+    <button type="button" class="modal-buy-now__btn-close" data-modal-close>
       <svg class="modal-buy-now__icon-close">
-        <use href="./images/icons.svg#icon-close"></use>
+        <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
     <!-- /Close btn -->
@@ -73,15 +73,21 @@
       <div class="modal-buy-now__contacts">
         <input
           type="text"
-          name="name"
+          name="user-sname"
           class="modal-buy-now__user-name"
           placeholder="Name"
+          minlength="2"
+          pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
+          required
         />
         <input
           type="tel"
           name="telephone"
           class="modal-buy-now__phone"
           placeholder="Phone"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+          title="Формат: 0671234567"
+          required
         />
         <textarea
           name="comments"
@@ -91,7 +97,9 @@
         ></textarea>
       </div>
       <!-- /contacts info -->
-      <button type="submit" class="modal-buy-now__btn">Submit</button>
+      <button type="submit" class="modal-buy-now__btn read-button">
+        Submit
+      </button>
     </form>
     <!-- /form -->
   </div>
