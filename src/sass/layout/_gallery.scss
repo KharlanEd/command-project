@@ -61,7 +61,7 @@
       ),
       url('../images/gallery/back-gallery-desktop.jpg');
     // height: 1118px;
-    max-width: 1600px;
+    max-width: 1200px;
     height: auto;
   }
 
@@ -75,7 +75,7 @@
       ),
       url('../images/gallery/back-gallery-desktop@2x.jpg');
     // height: 1118px;
-    max-width: 1600px;
+    max-width: 1200px;
     height: auto;
   }
 }
@@ -88,8 +88,10 @@
     height: calc((100vw - 40px) * 0.466);
   }
 
-  width: 440px;
-  height: 205px;
+  @media screen and (min-width: 480px) {
+    width: 440px;
+    height: 205px;
+  }
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
