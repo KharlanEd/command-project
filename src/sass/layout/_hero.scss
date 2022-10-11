@@ -4,31 +4,32 @@
 }
 .hero-container {
   height: 500px;
+  min-width:320px;
   padding-top: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   column-gap: 10px;
-  background-image:url('../images/hero/hero-big-icecream-mobile@2x.png') , url('../images/hero/dots-mobile.svg');
+  background-image:url('../images/hero/big-icecream-mobile@2x.png') , url('../images/hero/gradient-mobile.webp') , url('../images/hero/dots-mobile.svg');
   background-repeat: no-repeat;
-  background-position: bottom, bottom center;
-  background-size: 170px,contain;
+  background-position: bottom, bottom -20px center, bottom center;
+  background-size: 170px, 230px, contain;
   @media screen and (min-width: 480px) {
     flex-direction: inherit;
     padding-top:104px;
     height: 415px;
-    background-image: url('../images/hero/hero-big-icecream-tablet@2x.png') , url('../images/hero/dots-tablet.svg');
+    background-image: url('../images/hero/big-icecream-tablet@2x.png') , url('../images/hero/gradient-tablet.webp') , url('../images/hero/dots-tablet.svg');
     background-repeat: no-repeat;
-    background-position: bottom right 120px, bottom;
-    background-size: 270px, contain;
+    background-position: bottom right 120px, bottom -50px right 60px, bottom;
+    background-size: 270px,350px, contain;
   }
   @media screen and (min-width: 1200px) {
     padding-top:118px;
     height: 664px;
-    background-image: url('../images/hero/hero-big-icecream-desktop@2x.png') , url('../images/hero/dots-desctop.svg');
+    background-image: url('../images/hero/hero-big-icecream-desktop@2x.webp') , url('../images/hero/gradient-desktop.webp')  , url('../images/hero/dots-desctop.svg');
     background-repeat: no-repeat;
-    background-position: bottom right 90px,bottom;
-    background-size:484px, contain;
+    background-position: bottom right 90px,bottom -30px right 50px,bottom;
+    background-size:484px,570px,contain;
   }
 }
 .hero-container__left-side {
