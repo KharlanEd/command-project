@@ -5,6 +5,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 280px;
+  max-width: 450px;
   height: auto;
   padding: 26px 26px 31px;
   transition: transform var(--transition-dur-and-func);
@@ -60,6 +61,7 @@
 .video {
   position: absolute;
   width: 100%;
+  max-width: 450px;
   height: 100%;
   top: 0;
   left: 0;
@@ -69,7 +71,8 @@
 
 @media screen and (min-width: 768px) {
   .modal-read-more {
-    width: 568px;
+    width: 100%;
+    max-width: 568px;
     height: 449px;
     padding: 30px 58px;
     top: 50%;
