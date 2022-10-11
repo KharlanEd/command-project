@@ -25,6 +25,8 @@ a {
     flex-direction: column;
 
     width: 100%;
+
+    padding-bottom: 40px;
 }
 
 
@@ -107,7 +109,7 @@ a {
         
         color: var(--primary-text-color);
 
-        margin-bottom: 40px;
+       
 
        
 
@@ -122,6 +124,12 @@ a {
 
 .page-footer__link--black {
     color: var(--secondary-text-color);
+}
+
+.copyright__div {
+    border-top: 1px solid #E1E1E1;
+    
+    padding-top: 16px;
 }
 
 .copyright {
@@ -143,12 +151,14 @@ a {
 
 }
 
-.hr {
-    border: 1px solid #E1E1E1;
-    margin-top: 0px;
-    margin-bottom: 16px;
-}
 
+
+
+@media screen and (max-width: 319px) {
+    .page-footer__link {
+        font-size: 8px;
+    }
+}
 
 
 @media screen and (min-width: 768px) {
@@ -168,6 +178,8 @@ a {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+
+        background-position: 56px;
     }
 
     .page-footer__text {
@@ -184,7 +196,7 @@ a {
             
             text-transform: uppercase;
     
-            margin-bottom: 32px;
+            margin-bottom: 0px;
 
             width: 340px;
     }
@@ -192,7 +204,8 @@ a {
     .page-footer__social-list {
         
     
-        margin-top: 66px;
+        margin-top: 68px;
+        margin-bottom: 32px;
     
         }
 
@@ -211,23 +224,21 @@ a {
     
             
     
-        margin-bottom: 56px;
+        margin-bottom: 24px;
     
         }
 
 
-
+    .copyright__div {
+        padding-top: 14px;
+    }
 
 
     .copyright{
         width: 100%;
     }
 
-        .hr {
-            border: 1px solid #E1E1E1;
-            margin-bottom: 16px;
-            margin-top: 0px;
-        }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -247,6 +258,8 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+
+        padding-bottom: 54px;
     }
 
     .page-footer__text {
@@ -285,21 +298,19 @@ a {
 
 
 
-        margin-bottom: 60px;
+        margin-bottom: 0px;
 
     }
 
 
 
-
+    .copyright__div {
+        padding-top: 12px;
+    }
 
     .copyright {
         width: 100%;
+        font-size: 12px;
     }
 
-    .hr {
-        border: 1px solid #E1E1E1;
-        margin-bottom: 16px;
-        margin-top: 0px;
-    }
 }
