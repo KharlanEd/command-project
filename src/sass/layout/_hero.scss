@@ -12,7 +12,7 @@
   column-gap: 10px;
   background-image:url('../images/hero/big-icecream-mobile@2x.png') , url('../images/hero/gradient-mobile.webp') , url('../images/hero/dots-mobile.svg');
   background-repeat: no-repeat;
-  background-position: bottom, bottom -20px center, bottom center;
+  background-position: bottom, bottom center, bottom center;
   background-size: 170px, 230px, contain;
   @media screen and (min-width: 480px) {
     flex-direction: inherit;
