@@ -1,276 +1,273 @@
 .modal-ingredients {
-        position: absolute;
-        z-index: 120;
-        top: 8px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 28px 20px 32px;
-        background: var(--primary-text-color);
-        border: 2px solid var(--border-color-modal);
-        border-radius: 10px;
+  position: absolute;
+  z-index: 120;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 20px 32px;
+  background: var(--primary-text-color);
+  border: 2px solid var(--border-color-modal);
+  border-radius: 10px;
 }
 
 .modal-ingredients__btn-close {
-        position: absolute;
-        top: 28px;
-        right: 20px;
-        padding: 0;
-        background: transparent;
-        border: 0;
-        line-height: 0;
-        &:hover,
-        &:focus  {
-                fill: var(--border-color-modal)
-        }
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  line-height: 0;
+  &:hover,
+  &:focus {
+    fill: var(--border-color-modal);
+  }
 }
 
 .modal-ingredients__icon-close {
-        width: 20px;
-        height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .modal-ingredients__main-title {
-        font-family: 'Seymour One';
-        font-size: 20px;
-        line-height: 1.4;
+  font-family: 'Seymour One';
+  font-size: 20px;
+  line-height: 1.4;
 
-        text-align: center;
+  text-align: center;
 
+  margin-bottom: 22px;
 
-        margin-bottom: 22px;
-    
-        color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .modal-ingredients__ice-cream-container {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 32px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  width: 130px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8;
+    left: 0;
     width: 130px;
-    &::before {
-            content: "";
-            position: absolute;
-            top: 8;
-            left: 0;
-            width: 130px;
-            height: 130px;
-            border-radius: 100px;
+    height: 130px;
+    border-radius: 100px;
 
-            z-index: -1;
-        }
+    z-index: -1;
+  }
 }
 
 .modal-ingredients__ice-cream-container-color {
-        &::before {
-                box-shadow: 0px 5px 19px rgba(10, 136, 23, 0.25);
-                background-color: rgba(10, 136, 23, 0.25);
-        }
+  &::before {
+    box-shadow: 0px 5px 19px rgba(10, 136, 23, 0.25);
+    background-color: rgba(10, 136, 23, 0.25);
+  }
 }
 
 .modal-ingredients__ice-coffee-container-color {
-        &::before {
-                box-shadow: 0px 5px 19px rgba(248, 210, 78, 0.7);
-                background-color: rgba(248, 210, 78, 0.7);
-        }
+  &::before {
+    box-shadow: 0px 5px 19px rgba(248, 210, 78, 0.7);
+    background-color: rgba(248, 210, 78, 0.7);
+  }
 }
 
 .modal-ingredients__milkshakes-container-color {
-        &::before {
-                        box-shadow: 0px 5px 19px rgba(213, 117, 63, 0.7);
-                        background-color: rgba(213, 117, 63, 0.7);
-                }
+  &::before {
+    box-shadow: 0px 5px 19px rgba(213, 117, 63, 0.7);
+    background-color: rgba(213, 117, 63, 0.7);
+  }
 }
 
 .modal-ingredients__ice-cream {
-    border-radius: 100px;   
+  border-radius: 100px;
 }
 
 .modal-ingredients__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 9px;
-    margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 39px;
 }
 
 .modal-ingredients__items {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
 
-        width: 53px;
+  width: 53px;
 }
 
 .modal-ingredients__ice-cream-color {
-        border: 2px solid #9CBE8F;
+  border: 2px solid #9cbe8f;
 }
 
 .modal-ingredients__ice-coffee-color {
-        border: 2px solid #EFD478;
+  border: 2px solid #efd478;
 }
 
 .modal-ingredients__milkshakes-color {
-        border: 2px solid #D6936D;
+  border: 2px solid #d6936d;
 }
 
 .modal-ingredients__weight {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 2.8;
-        margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  margin-bottom: 8px;
 
-        width: 40px;
-        height: 40px;
+  width: 40px;
+  height: 40px;
 
-        border-radius: 40px;
-    
-        color: var(--secondary-text-color);
+  border-radius: 40px;
+
+  color: var(--secondary-text-color);
 }
 
 .modal-ingredients__ice-cream-weight-color {
-        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-        background: #9CBE8F;
-        border: 2px solid #9CBE8F;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
 }
 
 .modal-ingredients__ice-coffee-weight-color {
-        box-shadow: 0px 6px 20px rgba(248, 210, 78, 0.7);
-        background: #EFD478;
-        border: 2px solid #EFD478;
+  box-shadow: 0px 6px 20px rgba(248, 210, 78, 0.7);
+  background: #efd478;
+  border: 2px solid #efd478;
 }
 
 .modal-ingredients__milkshakes-weight-color {
-        box-shadow: 0px 6px 20px rgba(213, 117, 63, 0.7);
-        background: #D6936D;
-        border: 2px solid #D6936D;
+  box-shadow: 0px 6px 20px rgba(213, 117, 63, 0.7);
+  background: #d6936d;
+  border: 2px solid #d6936d;
 }
 
-
 .modal-ingredients__storage {
-        font-size: 10px;
-        line-height: 1.2;
+  font-size: 10px;
+  line-height: 1.2;
 
-        margin-bottom: 8px;
-    
-        color: var(--secondary-text-color);
+  margin-bottom: 8px;
+
+  color: var(--secondary-text-color);
 }
 
 .modal-ingredients__secondary-title {
-        text-align: center;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.4;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
 
-        margin-bottom: 24px;
+  margin-bottom: 24px;
 
-        color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .modal-ingredients__products-ingredients-list {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .modal-ingredients__products-ingredients {
-        font-size: 14px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
 
-        display: flex;
-        justify-content: space-between;
-    
-        color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--secondary-text-color);
 }
 
 .modal-ingredients__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 
-    max-width: 368px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+  max-width: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  //   margin-bottom: 24px;
 }
 
 .modal-ingredients__user-name,
 .modal-ingredients__phone,
 .modal-ingredients__comments {
-    width: 100%;
-    height: 42px;
-    background: var(--input-bg-color);
-    border: 1px solid var(--border-color-input);
-    border-radius: 10px;
+  width: 100%;
+  height: 42px;
+  background: var(--input-bg-color);
+  border: 1px solid var(--border-color-input);
+  border-radius: 10px;
 
-    &::placeholder {
-            font-size: 14px;
-            line-height: 1.4;
-        
-        
-            color: var(--secondary-text-color);
-    }
-}
-
-.modal-ingredients__comments {
-    height: 84px;
-}
-
-.modal-ingredients__user-name,
-.modal-ingredients__phone,
-.modal-ingredients__comments {
-    font-style: normal;
-    font-size: var(--mobile-secondary-font-size);
-    line-height: 1.41;
-    padding: 8px 12px;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.4;
 
     color: var(--secondary-text-color);
+  }
 }
 
 .modal-ingredients__comments {
-    resize: none;
+  height: 84px;
+}
+
+.modal-ingredients__user-name,
+.modal-ingredients__phone,
+.modal-ingredients__comments {
+  font-style: normal;
+  font-size: var(--mobile-secondary-font-size);
+  line-height: 1.41;
+  padding: 8px 12px;
+
+  color: var(--secondary-text-color);
+}
+
+.modal-ingredients__comments {
+  resize: none;
 }
 
 .modal-ingredients__btn {
-        width: 132px;
-        height: 42px;
-        justify-content: center;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 132px;
+  height: 42px;
+  justify-content: center;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
-        .modal-ingredients {
-                height: 100%;
-                max-height: 850px;
-                max-width: 568px;
-                padding: 40px 32px;
-                overflow: auto;
-        }
+  .modal-ingredients {
+    height: 100%;
+    max-height: 850px;
+    max-width: 568px;
+    padding: 32px 40px;
+    overflow: auto;
+  }
 
-        .modal-ingredients__list {
-                gap: 20px;
-        }
+  .modal-ingredients__list {
+    gap: 20px;
+  }
 
-        .modal-ingredients__storage {
-                font-size: 12px;
-        }
+  .modal-ingredients__storage {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-        .modal-ingredients {
-                overflow: hidden;
-                max-height: none;
-        }
+  .modal-ingredients {
+    overflow: hidden;
+    max-height: none;
+  }
 }
