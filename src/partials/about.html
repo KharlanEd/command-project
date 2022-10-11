@@ -1,6 +1,6 @@
 <!-- Section ABOUT -->
 
-<section id="about" class="about">
+<!--<section id="about" class="about">
   <div class="container about-container">
     <p class="about-label">tradition and love</p>
     <h2 class="title about-title">how it’s made?</h2>
@@ -60,6 +60,50 @@
       </li>
     </ul>
   </div>
-</section>
+</section> -->
 
 <!-- /Section ABOUT -->
+
+<section id="about" class="about">
+  <div class="container about__container">
+    <p class="about-label">tradition and love</p>
+    <h2 class="about-title">how it’s made?</h2>
+    <div class="about-wrapper">
+      <div class="about-cow about-cow-shadow">
+        <picture>
+          <source srcset="./images/about/cow-desktop.png 1x, ./images/about/cow-desktop@2x.png 2x" media="(min-width: 1200px)" />
+          <source srcset="./images/about/cow-tablet.png 1x, ./images/about/cow-tablet@2x.png 2x" media="(min-width: 768px)" />
+          <source srcset="./images/about/cow-mobile.png 1x, ./images/about/cow-mobile@2x.png 2x" media="(max-width: 767px)" />
+          <img class="about__cow" src="./images/about/cow-mobile.png"/>
+        </picture>
+      </div>
+      <div class="about-description__paragraph">
+        <p class="about-description__text about-description__text--indent">
+          Ice is a place where you will become not only a little happier, but also
+          healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about-description__text about-description__text--text">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of three
+          years. Sweets lovers can expect 55 types of ice cream, 15 types of
+          coffee and 23 milkshakes.
+        </p>
+        <p class="about-description__text about-description__text--hidden">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button
+          type="button"
+          class="read-button"
+          onclick="location.href='#'"
+          data-modal-open-read-more
+        >
+          Read more
+          <svg class="button-icon">
+            <use href="./images/symbol-defs.svg#icon-angle"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
