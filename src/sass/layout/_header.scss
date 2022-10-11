@@ -13,7 +13,7 @@
 }
 .nav__menu {
     display: none;
-    @media screen and (min-width:786px) {
+    @media screen and (min-width:1200px) {
         display: flex;
         padding-left: 0px;
         flex-direction: row;
@@ -47,11 +47,16 @@
     border-radius: 10px;
     background-color: var(--accent-color);
     }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 767px) {
         display: none!important;
     }
 }
-
+.mob-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
 .menu-open-btn {
     @media only screen and (max-width: 480px) {
     display: inline-flex;
@@ -64,7 +69,7 @@
     justify-content: center;
     align-items: center;
     }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1199px) {
             display: none;
     }
 }
