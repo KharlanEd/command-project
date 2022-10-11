@@ -1,38 +1,15 @@
 <header class="header">
-
-  <div class="container nav-conteiner">
+  <div class="container nav-container">
     <a href="#" class="logo">
       <picture>
-        <source
-          srcset="
-            ./images/header/logo-desktop.png    1x,
-            ./images/header/logo-desktop@2x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
+        <source srcset="./images/header/logo-desktop.png 1x, 
+              ./images/header/logo-desktop@2x.png 2x" media="(min-width:1200px)">
 
-    <div class="container nav-container">
-        <a href="#" class="logo">
-            <picture>
-                <source srcset="./images/header/logo-desktop.png 1x, 
-                ./images/header/logo-desktop@2x.png 2x" media="(min-width:1200px)">
+        <source srcset="./images/header/logo-mobile.png 1x, 
+              ./images/header/logo-mobile@2x.png 2x" media="(min-width:768px)">
 
-
-        <source
-          srcset="
-            ./images/header/logo-mobile.png    1x,
-            ./images/header/logo-mobile@2x.png 2x
-          "
-          media="(min-width:768px)"
-        />
-
-        <source
-          srcset="
-            ./images/header/logo-mobile.png    1x,
-            ./images/header/logo-mobile@2x.png 2x
-          "
-          media="(max-width:767px)"
-        />
+        <source srcset="./images/header/logo-mobile.png 1x, 
+              ./images/header/logo-mobile@2x.png 2x" media="(max-width:767px)">
 
         <img class="logo-img" alt="logo Ice Cream" />
       </picture>
@@ -59,12 +36,7 @@
           <use href="./images/header/icons.svg#icon-burger" class=""></use>
         </svg>
       </button>
-      <button
-        type="button"
-        class="read-button"
-        onclick="location.href='#'"
-        data-modal-open
-      >
+      <button type="button" class="header__button read-button" onclick="location.href='#'">
         Buy now
         <svg class="button-icon">
           <use href="./images/symbol-defs.svg#icon-angle"></use>
@@ -75,65 +47,21 @@
   <div class="mob-menu mob-is-hidden" data-menu>
     <a href="#" class="mob-logo">
       <picture>
-        <source
-          srcset="
-            ./images/header/logo-desktop.png    1x,
-            ./images/header/logo-desktop@2x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
+        <source srcset="./images/header/logo-desktop.png 1x, 
+              ./images/header/logo-desktop@2x.png 2x" media="(min-width:1200px)">
 
+        <source srcset="./images/header/logo-mobile.png 1x, 
+              ./images/header/logo-mobile@2x.png 2x" media="(min-width:768px)">
 
-        <source
-          srcset="
-            ./images/header/logo-mobile.png    1x,
-            ./images/header/logo-mobile@2x.png 2x
-          "
-          media="(min-width:768px)"
-        />
-
-        </nav>
-        <nav class="mob-buttons">
-            <button type="menu-open-btn" class="menu-open-btn" data-menu-open>
-                <svg class="burger" width="32" height="32">
-                    <use href="./images/header/icons.svg#icon-burger" class=""></use>
-                </svg>
-            </button>
-            <button type="button" class="header__button read-button" onclick="location.href='#'">
-                Buy now
-                <svg class="button-icon">
-                    <use href="./images/symbol-defs.svg#icon-angle"></use>
-                </svg>
-            </button>
-        </nav>
-    </div>
-    <div class="mob-menu mob-is-hidden" data-menu>
-        <a href="#" class="mob-logo">
-            <picture>
-                <source srcset="./images/header/logo-desktop.png 1x, 
-                ./images/header/logo-desktop@2x.png 2x" media="(min-width:1200px)">
-
-                <source srcset="./images/header/logo-mobile.png 1x, 
-                ./images/header/logo-mobile@2x.png 2x" media="(min-width:768px)">
-
-
-        <source
-          srcset="
-            ./images/header/logo-mobile.png    1x,
-            ./images/header/logo-mobile@2x.png 2x
-          "
-          media="(max-width:767px)"
-        />
+        <source srcset="./images/header/logo-mobile.png 1x, 
+              ./images/header/logo-mobile@2x.png 2x" media="(max-width:767px)">
 
         <img class="logo-img" alt="logo Ice Cream" />
       </picture>
     </a>
     <button type="button" class="menu-close-btn" data-menu-close>
       <svg class="" width="40" height="40">
-        <use
-          href="./images/header/icons.svg#icon-close-black-18dp"
-          class=""
-        ></use>
+        <use href="./images/header/icons.svg#icon-close-black-18dp" class=""></use>
       </svg>
     </button>
     <div class="mob-menu-wrap">
@@ -154,48 +82,14 @@
         </ul>
       </nav>
       <div class="mob__cta-wrapper">
-        <button
-          type="button"
-          class="read-button"
-          onclick="location.href='#'"
-          data-modal-open
-        >
+        <button type="button" class="mob__button read-button" onclick="location.href='#'">
           Buy now
           <svg class="button-icon">
             <use href="./images/symbol-defs.svg#icon-angle"></use>
           </svg>
         </button>
-
       </div>
-
-        <div class="mob-menu-wrap">
-            <nav class="mob-menu-nav">
-                <ul class="mob-menu__list list">
-                    <li class="mob-menu__iteam">
-                        <a href="#home" class="mob-menu__link link">Home</a>
-                    </li>
-                    <li class="mob-menu__iteam">
-                        <a href="#about" class="mob-menu__link link">How it’s made?</a>
-                    </li>
-                    <li class="mob-menu__iteam">
-                        <a href="#our_products" class="mob-menu__link link">Our products</a>
-                    </li>
-                    <li class="mob-menu__iteam">
-                        <a href="#contact" class="mob-menu__link link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="mob__cta-wrapper">
-                <button type="button" class="mob__button read-button" onclick="location.href='#'">
-                    Buy now
-                    <svg class="button-icon">
-                        <use href="./images/symbol-defs.svg#icon-angle"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-
     </div>
+
   </div>
 </header>
