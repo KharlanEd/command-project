@@ -1,6 +1,6 @@
 .about__container {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   padding-top: 60px;
   text-align: center;
   z-index: 100;
@@ -25,11 +25,11 @@
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .about-label {
-//     font-size: var(--mobile-title-font-size);
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .about-label {
+    font-size: var(--mobile-title-font-size);
+  }
+}
 
 .about-title {
   width: 100%;
@@ -70,7 +70,7 @@
 }
 
 
-.about-cow {
+.about-cow-image {
   position: relative;
   width: 278px;
   margin-left: auto;
@@ -89,14 +89,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-cow {
+  .about-cow-image {
     width: 334px;
     margin-left: 1px;
-    // margin-right: 33px;
+    margin-right: 32px;
     margin-bottom: 0;
   }
 
-  .about-cow::before {
+  .about-cow-image::before {
     width: 334px;
     height: 330px;
     top: -26;
@@ -105,15 +105,16 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .about-cow {
+  .about-cow-image {
     width: 490px;
     margin-left: 2px;
+    margin-right: 108px;
   }
 
-  .about-cow::before {
+  .about-cow-image::before {
     width: 500px;
     height: 500px;
-    top: -32;
+    top: -38;
     left: -1%;
   }
 }
@@ -151,7 +152,7 @@
 
 @media screen and (min-width: 768px) {
   .about-description__paragraph {
-    padding-left: 368px;
+    padding-right: 0;
   }
 }
 
@@ -265,89 +266,3 @@
   fill: currentColor;
   margin-left: 5px;
 }
-
-
-
-
-
-// .about-container {
-//   padding-top: 60px;
-//   padding-left: 21px;
-//   padding-right: 21px;
-// }
-// .about__list {
-//   text-align: center;
-// }
-// .about-label {
-//   margin-bottom: 12px;
-
-//   text-align: center;
-
-//   font-weight: 700;
-//   font-size: var(--mobile-label-font-size);
-//   line-height: 1.22;
-//   color: var(--primary-text-color);
-//   text-transform: uppercase;
-// }
-
-// .about-title {
-//   width: 100%;
-
-//   text-align: center;
-//   margin-bottom: 32px;
-//   font-family: Seymour One;
-//   font-weight: 400;
-//   font-size: var(--mobile-title-font-size);
-//   line-height: 1.26;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-//   color: var(--primary-text-color);
-// }
-
-// .about__img {
-//   margin-left: auto;
-//   margin-right: auto;
-  
-// }
-
-// .about__item {
-//   width: 100%;
-//   text-align: center;
-//   margin-bottom: 40px;
-// }
-
-// @media screen and (min-width: 769px) {
-  
-//   .about {
-//       padding-top: 57px;
-  
-//     }
-  
-//     .about-container {
-//       padding-right: 105px;
-//     }
-
-//   .about__list {
-//     display: flex;
-//     gap: 100px;
-//     align-items: center;
-//   }
-
-// .about-description__text {
-//   width: 100%;
-
-//   font-size: 16px;
-
-//   font-weight: 400;
-//   font-size: var(--mobile-secondary-font-size);
-//   line-height: 1.76;
-//   letter-spacing: 0.04em;
-
-//   color: var(--primary-text-color);
-// }
-
-
-// }
-
-
-
