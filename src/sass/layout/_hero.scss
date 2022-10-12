@@ -118,10 +118,10 @@
 }
 .hero__icecream-plate {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: flex;
-    justify-content: space-between;
-    gap: 33px;
+    justify-content: start;
+    gap: 23px;
     align-items: center;
     width: 336px;
 
