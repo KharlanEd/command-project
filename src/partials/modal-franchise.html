@@ -19,36 +19,36 @@
       <label>
         <input
           type="text"
-          name="user_name"
+          name="name"
+          required
+          pattern="[a-zA-Zа-яА-ЯіІїЇ'`]+"
           class="modal-form__input"
           placeholder="Name"
-          pattern="[a-zA-Zа-яА-ЯіІїЇ'`]+"
-          required
         />
       </label>
       <label>
         <input
           type="tel"
-          name="user_phone"
-          class="modal-form__input"
-          placeholder="Phone"
+          name="phone"
+          required
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
           title="xxx-xxx-xx-xx"
-          required
+          class="modal-form__input"
+          placeholder="Phone"
         />
       </label>
       <label>
         <input
           type="email"
-          name="user_email"
-          class="modal-form__input"
-          placeholder="Email"
+          name="email"
           required
+          placeholder="Email"
+          class="modal-form__input"
         />
       </label>
       <label class="modal-form__textarea">
         <textarea
-          name="user_message"
+          name="message"
           class="modal-form__message"
           placeholder="Comment"
         ></textarea>

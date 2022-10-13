@@ -41,6 +41,16 @@
   }
 }
 
+.modal-form__input:not(:placeholder-shown):valid,
+.modal-form__input:not(:placeholder-shown):valid {
+  border-color: var(--valid-form-border-color);
+}
+
+.modal-form__input:not(:placeholder-shown):invalid,
+.modal-form__input:not(:placeholder-shown):invalid {
+  border-color: var(--invalid-form-border-color);
+}
+
 .modal-form__message {
   display: block;
   padding: 8px 12px;
@@ -84,6 +94,7 @@
   }
 
   .modal-form {
+    width: 368px;
     margin-right: auto;
     margin-left: auto;
   }
