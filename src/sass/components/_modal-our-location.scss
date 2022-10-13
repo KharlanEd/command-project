@@ -21,7 +21,16 @@
     right: 8px;
     padding: 0;
     background-color: transparent;
+    border: 0;
+    line-height: 0;
     cursor: pointer;
+
+    transition: fill var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        fill: var(--border-color-modal);
+    }
 }
 
 .modal__title {
