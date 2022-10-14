@@ -61,6 +61,19 @@
     font-weight: 600;
     font-size: var(--mobile-secondary-font-size);
     line-height: 1.25;
+
+    transition: background-color var(--transition-dur-and-func), 
+    color var(--transition-dur-and-func);
+
+    &:hover {
+        background-color: var(--hover-focus-color);
+    }
+
+    &:focus {
+        background-color: var(--hover-focus-color);
+        color: var(--primary-text-color);
+        outline: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
