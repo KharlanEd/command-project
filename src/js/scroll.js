@@ -24,7 +24,10 @@ $(document).ready(function () {
           window.location.hash = hash;
         }
       );
-      if (refs.menu.classList[1] === 'mob-is-hidden') {
+      if (
+        refs.menu.classList[1] === 'mob-is-hidden' ||
+        refs.menu.classList[0] === 'mob-is-hidden'
+      ) {
         return;
       }
       refs.menu.classList.toggle('mob-is-hidden');
