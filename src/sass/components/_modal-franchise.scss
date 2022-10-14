@@ -76,6 +76,13 @@
   }
 }
 
+.modal__btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .modal_height {
     height: 668px;
@@ -127,4 +134,8 @@
       font-size: var(--mobile-primary-font-size);
     }
   }
+
+    .modal__btn {
+      margin-top: 32px;
+    }
 }
