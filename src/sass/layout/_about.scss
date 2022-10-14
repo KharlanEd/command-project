@@ -162,8 +162,9 @@
 }
 
 .about-description__text {
-  width: 100%;
-  max-width: 220px;
+  // width: 100%;
+  max-width: 380px;
+  width: calc(100vw - 100px);
   font-weight: 400;
   font-size: var(--mobile-secondary-font-size);
   line-height: 1.76;
